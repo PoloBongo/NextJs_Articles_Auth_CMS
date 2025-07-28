@@ -9,7 +9,7 @@ export default function EditArticlePage({
   const { id } = use(params);
 
   const article = use(
-    fetch(`http://localhost:3000/api/articles/${id}`).then((res) => res.json())
+    fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/articles/${id}`).then((res) => res.json())
   );
 
   return <EditArticleClient article={article} id={id} />;
