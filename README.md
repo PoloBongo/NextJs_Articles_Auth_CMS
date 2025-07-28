@@ -1,4 +1,4 @@
-## Authentification avec NextAuth Credentials Provider dans Next.js 13+
+## Authentification avec NextAuth Credentials Provider dans Next.js 15+
 
 Description
 Ce projet implémente une authentification par email/mot de passe avec NextAuth dans Next.js 15.4.4, en utilisant :
