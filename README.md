@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Authentification avec NextAuth Credentials Provider dans Next.js 13+
 
-## Getting Started
+Description
+Ce projet implémente une authentification par email/mot de passe avec NextAuth dans Next.js 13, en utilisant :
 
-First, run the development server:
+CredentialsProvider pour valider les utilisateurs dans MongoDB.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Gestion des sessions JWT.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Affichage des erreurs de connexion dans la page de login via query string ?error=.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Redirection automatique après connexion réussie vers la page /admin.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Protection de la page /admin avec getServerSession.
 
-## Learn More
+Une page d’administration protégée.
 
-To learn more about Next.js, take a look at the following resources:
+Un système de création d’articles tracé : chaque article est lié à l’utilisateur qui l’a créé.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Affichage des articles avec possibilité de filtrer ou gérer uniquement ceux de l’utilisateur connecté.
