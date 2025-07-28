@@ -1,7 +1,7 @@
 ## Authentification avec NextAuth Credentials Provider dans Next.js 13+
 
 Description
-Ce projet implémente une authentification par email/mot de passe avec NextAuth dans Next.js 13, en utilisant :
+Ce projet implémente une authentification par email/mot de passe avec NextAuth dans Next.js 15.4.4, en utilisant :
 
 CredentialsProvider pour valider les utilisateurs dans MongoDB.
 
